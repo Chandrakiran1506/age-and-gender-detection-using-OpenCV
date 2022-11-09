@@ -4,7 +4,9 @@ To build a gender and age detector that can approximately guess the gender and a
 SCOPE:
            
 To predict the age, we are going to use a convolutional neural network (CNN) architecture. This CNN uses 3 convolutional layers and 2 fully connected layers with one final output layer.
+We run the application via visual studio code
 This problem can be considered as a classification problem instead of regression. The reason being estimating the exact age using regression is a challenging task. Even human beings cannot predict age just by looking at the face. So, we will try to predict the age in an age group like in 20 – 30 or 30-40 and so on.  It is tough to predict the age of a person from a single image as perceived age depends upon many factors.
+
 Modules used in this project
 OpenCV: As the name suggests, OpenCV is an open-source Computer Vision library. OpenCV is capable of processing real-time images and videos with analytical capabilities. It supports deep learning frameworks like TensorFlow, Pytorch, and Caffe.
 
@@ -68,8 +70,8 @@ However, in some cases the mean Red, Green, and Blue values may be computed chan
 Both methods are perfectly valid forms of mean subtraction; however, we tend to see the pixel-wise version used more often, especially for larger datasets.
 When we are ready to pass an image through our network (whether for training or testing), we subtract the mean u  , from each input channel of the input image:
 R=R-uR
-G=G-uG
-B=B-uB
+ G=G-uG
+ B=B-uB
  
  
  
